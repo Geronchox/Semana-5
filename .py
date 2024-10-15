@@ -1,6 +1,7 @@
 recursos_ecosistema = {"agua": 1000, "alimento": 800}
     
 def animal_interactua(tipo_animal, cant_alimen, cant_agua=None):
+    """ Esta función trata de una simulacion de un ser vivo que interactua en su ambiente """
     global recursos_ecosistema
     if tipo_animal == "herbívoro":
         if recursos_ecosistema["agua"] >= cant_agua and recursos_ecosistema["alimento"] >= cant_alimen:
